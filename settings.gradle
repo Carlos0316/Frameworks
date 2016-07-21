@@ -1,0 +1,1 @@
+include ':app', ':LibUIWidgets', ':LibDevice', ':LibNetwork', ':LibVideo', ':LibAudio', ':LibImage', ':LibPlugin'

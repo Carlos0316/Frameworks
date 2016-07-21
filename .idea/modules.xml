@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Frameworks.iml" filepath="$PROJECT_DIR$/Frameworks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibAudio/LibAudio.iml" filepath="$PROJECT_DIR$/LibAudio/LibAudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibDevice/LibDevice.iml" filepath="$PROJECT_DIR$/LibDevice/LibDevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibImage/LibImage.iml" filepath="$PROJECT_DIR$/LibImage/LibImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibNetwork/LibNetwork.iml" filepath="$PROJECT_DIR$/LibNetwork/LibNetwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibPlugin/LibPlugin.iml" filepath="$PROJECT_DIR$/LibPlugin/LibPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibUIWidgets/LibUIWidgets.iml" filepath="$PROJECT_DIR$/LibUIWidgets/LibUIWidgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibVideo/LibVideo.iml" filepath="$PROJECT_DIR$/LibVideo/LibVideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
