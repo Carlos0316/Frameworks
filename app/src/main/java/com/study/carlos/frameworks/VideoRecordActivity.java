@@ -30,9 +30,10 @@ public class VideoRecordActivity extends Activity implements View.OnClickListene
     private SurfaceView mSurfaceView;
     private SurfaceHolder mSurfaceHolder;
 
-    private File mVideoFile;
     private MediaRecorder mMediaRecorder;
     private Camera mCamera;
+
+    private File mVideoFile;
 
     private Button mStartBtn;
     private Button mStopBtn;

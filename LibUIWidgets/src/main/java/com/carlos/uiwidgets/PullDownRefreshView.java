@@ -1,12 +1,9 @@
-package com.carlos.libvideo;
-
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
+package com.carlos.uiwidgets;
 
 /**
- * Created by Carlos on 2016/7/12.
+ * Created by Carlos on 2016/8/10.
  */
-public class VideoRecordManager {
+public class PullDownRefreshView {
 
     // ===========================================================
     // Constants
@@ -15,8 +12,6 @@ public class VideoRecordManager {
     // ===========================================================
     // Fields
     // ===========================================================
-
-    private SurfaceHolder mSurfaceHolder;
 
     // ===========================================================
     // Constructors
@@ -34,31 +29,8 @@ public class VideoRecordManager {
     // Methods
     // ===========================================================
 
-    public static VideoRecordManager getInstance() {
-        return InstanceHolder.instance;
-    }
-
-    public void prepare(SurfaceView surfaceView) {
-
-    }
-
-    public void start() {
-
-    }
-
-    public void release() {
-
-    }
-
-    public void stop() {
-
-    }
-
     // ===========================================================
     // Inner and Anonymous Classes
-    // ===========================================================
+    // ===========================================================    
 
-    private static class InstanceHolder {
-        protected static VideoRecordManager instance = new VideoRecordManager();
-    }
 }

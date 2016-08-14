@@ -1,12 +1,13 @@
-package com.carlos.libvideo;
+package com.carlos.uiwidgets;
 
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.Button;
 
 /**
- * Created by Carlos on 2016/7/12.
+ * Created by Carlos on 2016/7/15.
  */
-public class VideoRecordManager {
+public class BaseButton extends Button {
 
     // ===========================================================
     // Constants
@@ -16,11 +17,21 @@ public class VideoRecordManager {
     // Fields
     // ===========================================================
 
-    private SurfaceHolder mSurfaceHolder;
-
     // ===========================================================
     // Constructors
     // ===========================================================
+
+    public BaseButton(Context context) {
+        this(context, null, 0);
+    }
+
+    public BaseButton(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public BaseButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
 
     // ===========================================================
     // Getter & Setter
@@ -34,31 +45,8 @@ public class VideoRecordManager {
     // Methods
     // ===========================================================
 
-    public static VideoRecordManager getInstance() {
-        return InstanceHolder.instance;
-    }
-
-    public void prepare(SurfaceView surfaceView) {
-
-    }
-
-    public void start() {
-
-    }
-
-    public void release() {
-
-    }
-
-    public void stop() {
-
-    }
-
     // ===========================================================
     // Inner and Anonymous Classes
-    // ===========================================================
+    // ===========================================================    
 
-    private static class InstanceHolder {
-        protected static VideoRecordManager instance = new VideoRecordManager();
-    }
 }

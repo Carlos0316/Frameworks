@@ -1,12 +1,9 @@
 package com.carlos.libvideo;
 
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-
 /**
- * Created by Carlos on 2016/7/12.
+ * Created by Carlos on 2016/7/21.
  */
-public class VideoRecordManager {
+public class LiveVideoManager {
 
     // ===========================================================
     // Constants
@@ -15,8 +12,6 @@ public class VideoRecordManager {
     // ===========================================================
     // Fields
     // ===========================================================
-
-    private SurfaceHolder mSurfaceHolder;
 
     // ===========================================================
     // Constructors
@@ -34,24 +29,8 @@ public class VideoRecordManager {
     // Methods
     // ===========================================================
 
-    public static VideoRecordManager getInstance() {
+    public static LiveVideoManager getInstance() {
         return InstanceHolder.instance;
-    }
-
-    public void prepare(SurfaceView surfaceView) {
-
-    }
-
-    public void start() {
-
-    }
-
-    public void release() {
-
-    }
-
-    public void stop() {
-
     }
 
     // ===========================================================
@@ -59,6 +38,7 @@ public class VideoRecordManager {
     // ===========================================================
 
     private static class InstanceHolder {
-        protected static VideoRecordManager instance = new VideoRecordManager();
+        protected static LiveVideoManager instance = new LiveVideoManager();
     }
+
 }

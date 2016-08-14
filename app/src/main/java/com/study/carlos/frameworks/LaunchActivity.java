@@ -1,11 +1,12 @@
 package com.study.carlos.frameworks;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 /**
- * Created by Carlos on 2016/8/4.
+ * Created by Carlos on 2016/8/9.
  */
-public class TestViewActivity extends Activity {
+public class LaunchActivity extends Activity {
 
     // ===========================================================
     // Constants
@@ -15,29 +16,30 @@ public class TestViewActivity extends Activity {
     // Fields
     // ===========================================================
 
-
     // ===========================================================
     // Constructors
     // ===========================================================
 
-
     // ===========================================================
-    // Getter &amp; Setter
+    // Getter & Setter
     // ===========================================================
-
 
     // ===========================================================
     // Methods for/from SuperClass/Interfaces
     // ===========================================================
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_test_view);
+    }
 
     // ===========================================================
     // Methods
     // ===========================================================
 
-
     // ===========================================================
     // Inner and Anonymous Classes
-    // ===========================================================
+    // ===========================================================    
 
 }
