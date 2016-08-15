@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Frameworks.iml" filepath="$PROJECT_DIR$/Frameworks.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibAudio/LibAudio.iml" filepath="$PROJECT_DIR$/LibAudio/LibAudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibDevice/LibDevice.iml" filepath="$PROJECT_DIR$/LibDevice/LibDevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibFileSystem/LibFileSystem.iml" filepath="$PROJECT_DIR$/LibFileSystem/LibFileSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibImage/LibImage.iml" filepath="$PROJECT_DIR$/LibImage/LibImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibNetwork/LibNetwork.iml" filepath="$PROJECT_DIR$/LibNetwork/LibNetwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibPlugin/LibPlugin.iml" filepath="$PROJECT_DIR$/LibPlugin/LibPlugin.iml" />

@@ -12,21 +12,14 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Handler;
-import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
-import java.lang.ref.WeakReference;
-
-
-public class RoundProgressLoadingView extends View {
+public class RoundProgressView extends View {
 
     // ===========================================================
     // Constants
     // ===========================================================
-
-    private final static int MSG_INVALIDATE_VIEW = 0x01;
 
     // ===========================================================
     // Fields
@@ -56,17 +49,17 @@ public class RoundProgressLoadingView extends View {
     // Constructors
     // ===========================================================
 
-    public RoundProgressLoadingView(Context context) {
+    public RoundProgressView(Context context) {
         super(context);
         init(context, null);
     }
 
-    public RoundProgressLoadingView(Context context, AttributeSet attrs) {
+    public RoundProgressView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public RoundProgressLoadingView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public RoundProgressView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
@@ -116,14 +109,14 @@ public class RoundProgressLoadingView extends View {
     // ===========================================================
 
     private void init(Context context, AttributeSet attrs) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RoundProgressLoadingView);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RoundProgressView);
 
-        mInnerColor = a.getColor(R.styleable.RoundProgressLoadingView_innerColor, Color.parseColor("#189382"));
-        mProgressColor = a.getColor(R.styleable.RoundProgressLoadingView_progressColor, Color.parseColor("#1fbba6"));
-        mProgressWidth = a.getDimensionPixelOffset(R.styleable.RoundProgressLoadingView_progressWidth, 20);
+        mInnerColor = a.getColor(R.styleable.RoundProgressView_innerColor, Color.parseColor("#189382"));
+        mProgressColor = a.getColor(R.styleable.RoundProgressView_progressColor, Color.parseColor("#1fbba6"));
+        mProgressWidth = a.getDimensionPixelOffset(R.styleable.RoundProgressView_progressWidth, 20);
 
-        mMaxProgress = a.getInteger(R.styleable.RoundProgressLoadingView_maxProgress, 100);
-        mProgress = a.getInteger(R.styleable.RoundProgressLoadingView_progress, 50);
+        mMaxProgress = a.getInteger(R.styleable.RoundProgressView_maxProgress, 100);
+        mProgress = a.getInteger(R.styleable.RoundProgressView_progress, 50);
 
         a.recycle();
 
@@ -138,8 +131,6 @@ public class RoundProgressLoadingView extends View {
         mProgressPaint.setStyle(Paint.Style.STROKE);
         mProgressPaint.setStrokeWidth(mProgressWidth);
         mProgressPaint.setStrokeCap(Paint.Cap.BUTT);
-
-        mHandler = new InvalidateHandler(this);
     }
 
     private void drawInnerBackground(Canvas canvas) {
@@ -157,32 +148,12 @@ public class RoundProgressLoadingView extends View {
     public void setProgress(float progress) {
         if (progress >= 0.0f && progress <= mMaxProgress) {
             mProgress = progress;
-
-            if (mHandler != null) {
-                mHandler.sendEmptyMessage(MSG_INVALIDATE_VIEW);
-            }
+            invalidate();
         }
     }
 
     // ===========================================================
     // Inner and Anonymous Classes
     // ===========================================================
-
-    private static class InvalidateHandler extends Handler {
-
-        private WeakReference<View> mRef;
-
-        public InvalidateHandler(View v) {
-            mRef = new WeakReference<View>(v);
-        }
-
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            if (mRef != null && mRef.get() != null) {
-                mRef.get().invalidate();
-            }
-        }
-    }
 
 }

@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LibAudio" />
             <option value="$PROJECT_DIR$/LibDevice" />
+            <option value="$PROJECT_DIR$/LibFileSystem" />
             <option value="$PROJECT_DIR$/LibImage" />
             <option value="$PROJECT_DIR$/LibNetwork" />
             <option value="$PROJECT_DIR$/LibPlugin" />
@@ -24,6 +25,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LibAudio" />
             <option value="$PROJECT_DIR$/LibDevice" />
+            <option value="$PROJECT_DIR$/LibFileSystem" />
             <option value="$PROJECT_DIR$/LibImage" />
             <option value="$PROJECT_DIR$/LibNetwork" />
             <option value="$PROJECT_DIR$/LibPlugin" />

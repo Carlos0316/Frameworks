@@ -6,7 +6,7 @@
         <attr name="waveColor" format="color" />
     </declare-styleable>
 
-    <declare-styleable name="RoundProgressLoadingView">
+    <declare-styleable name="RoundProgressView">
         <attr name="innerColor" format="color" />
         <attr name="progressColor" format="color" />
         <attr name="progressWidth" format="dimension" />
