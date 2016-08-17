@@ -5,10 +5,13 @@ android {
     buildToolsVersion "24.0.0"
 
     defaultConfig {
-        minSdkVersion 8
+        minSdkVersion 17
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
